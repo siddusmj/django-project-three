@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    h1{
+        text-align: center;
+    }
+    header div{
+        text-align: inline;
+    }
+ .ls{
+     text-align: left;
+ }
+ .cs{
+     text-align: center;
+ }
+ .rs{
+     text-align: right;
+ }
+
+</style>
+
+
+
+</head>
+<body>
+    <h1>Welcome..</h1>
+    <header>
+            <div class="ls"><a href="#">Delete a column</a></div>
+            <div class="cs"><a href="ins">insert a column</a></div>
+            <div class="rs"><a href="upda">update a column</a></div>
+            
+    </header>
+    <aside>
+      
+
+    
+                <style>
+                    header{
+                         border: 1px solid green;
+                         color: orangered;
+                         font-size: 20px; 
+                         background-color: aqua;
+                    }
+                    a{
+                        color:rgb(255, 0, 149);
+                    }
+                    aside{
+                        padding: 500px;
+                        padding-top: 100px;
+                    }
+                        table{
+                            text-align: center;
+                            border: 2px solid;
+                            padding: 10px;
+                            background-color:cornflowerblue;
+                            
+                    
+                        }
+                        td{
+                            border: 2px solid black;
+                            padding: 10px;
+                            color: white;
+                        }
+                        th{
+                            color: red;
+                            font-size: 19px;
+                            border: 2px solid;
+                            padding: 10px;
+                        }
+                        </style>
+                        <table>
+                    
+                               
+                        
+                                <tr>
+                                        <th>name</th>
+                                        <th>cname</th>
+                                        <th>cost</th>
+                                </tr>
+                                {% for stu in studentData %}
+                                <tr>
+                            
+                                        <td>{{stu.name}}</td>
+                                        <td>{{stu.cname}}</td>
+                                        <td>{{stu.cost}}</td>
+                                </tr>  
+                            
+                                {% endfor %}
+                            
+                            </table>
+    </aside>
+</body>
+</html>
